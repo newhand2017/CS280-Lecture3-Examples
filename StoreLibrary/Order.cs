@@ -10,6 +10,6 @@ namespace StoreLibrary
     {
         public int Id;
         public Customer Customer;
-        public List<Product> ProductList = new List<Product>;
+        public List<Product> ProductList = new List<Product>();
     }
 }

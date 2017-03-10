@@ -1,0 +1,11 @@
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\bin\Debug\Example03.exe.config
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.csprojResolveAssemblyReference.cache
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.Form1.resources
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.Properties.Resources.resources
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.csproj.GenerateResource.Cache
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\bin\Debug\Example03.exe
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\bin\Debug\Example03.pdb
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\bin\Debug\StoreLibrary.dll
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\bin\Debug\StoreLibrary.pdb
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.exe
+D:\CS280Projects\CS280-Lecture3-Examples\Example03\obj\Debug\Example03.pdb
