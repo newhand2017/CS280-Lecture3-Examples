@@ -80,37 +80,42 @@ namespace Example03
             this.product2Button.Text = "油條";
             this.accountButton.Text = "結帳";
 
-            if (this.order != null)
-            {
-                orderButton.Enabled = false;
-                product1Button.Enabled = true;
-                product2Button.Enabled = true;
+            //     if (this.order != null)
+            //     {
+            //         orderButton.Enabled = false;
+            //         product1Button.Enabled = true;
+            //         product2Button.Enabled = true;
 
-                //    string orderDetail = string.Empty;
-                //    orderDetail = string.Format("點餐明細 : \n");
+            //         //    string orderDetail = string.Empty;
+            //         //    orderDetail = string.Format("點餐明細 : \n");
 
-                //     float total = 0.0f;
+            //         //     float total = 0.0f;
 
-                //     //新增資訊
-                //     foreach (Product product in this.order.ProductList)
-                //     {
-                //         orderDetail += string.Format("{0} : {1} 元\n", product.Name, product.Price);
-                //         total = total + product.Price;
-                //     }
-                //     //小計
-                //     orderDetail += string.Format("結帳金額 : {0}\n", total);
+            //        //     //新增資訊
+            //        //     foreach (Product product in this.order.ProductList)
+            //         //     {
+            //         //         orderDetail += string.Format("{0} : {1} 元\n", product.Name, product.Price);
+            //         //         total = total + product.Price;
+            //         //     }
+            //         //     //小計
+            //         //     orderDetail += string.Format("結帳金額 : {0}\n", total);
 
-                //Output Info.
-                this.orderRichTextBox.Text = order.GetOrderDetail();
-            }
-            else
-            {
-                orderButton.Enabled = true;
-                product1Button.Enabled = false;
-                product2Button.Enabled = false;
+            //         //Output Info.
+            //         this.orderRichTextBox.Text = order.GetOrderDetail();
+            //     }
+            //     else
+            //     {
+            //         orderButton.Enabled = true;
+            //         product1Button.Enabled = false;
+            //         product2Button.Enabled = false;
 
-                orderRichTextBox.Text = string.Empty;
-            }
+            //         orderRichTextBox.Text = string.Empty;
+            //     }
+
+            orderButton.Enabled = this.order == null;
+            product1Button.Enabled = this.order != null;
+            product2Button.Enabled = this.order != null;
+            this.orderRichTextBox.Text = (this.order != null) ? order.GetOrderDetail() : string.Empty;
         }
 
         //-------------------------------------------------
