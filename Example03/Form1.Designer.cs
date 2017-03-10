@@ -33,6 +33,8 @@
             this.customerLabel = new System.Windows.Forms.Label();
             this.orderRichTextBox = new System.Windows.Forms.RichTextBox();
             this.orderButton = new System.Windows.Forms.Button();
+            this.accountButton = new System.Windows.Forms.Button();
+            this.tableComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // product1Button
@@ -82,11 +84,40 @@
             this.orderButton.UseVisualStyleBackColor = true;
             this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
             // 
+            // accountButton
+            // 
+            this.accountButton.Location = new System.Drawing.Point(493, 155);
+            this.accountButton.Name = "accountButton";
+            this.accountButton.Size = new System.Drawing.Size(139, 64);
+            this.accountButton.TabIndex = 5;
+            this.accountButton.Text = "button1";
+            this.accountButton.UseVisualStyleBackColor = true;
+            this.accountButton.Click += new System.EventHandler(this.accountButton_Click);
+            // 
+            // tableComboBox
+            // 
+            this.tableComboBox.FormattingEnabled = true;
+            this.tableComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.tableComboBox.Location = new System.Drawing.Point(183, 9);
+            this.tableComboBox.Name = "tableComboBox";
+            this.tableComboBox.Size = new System.Drawing.Size(139, 20);
+            this.tableComboBox.TabIndex = 6;
+            this.tableComboBox.SelectedIndexChanged += new System.EventHandler(this.tableComboBox_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 607);
+            this.Controls.Add(this.tableComboBox);
+            this.Controls.Add(this.accountButton);
             this.Controls.Add(this.orderButton);
             this.Controls.Add(this.orderRichTextBox);
             this.Controls.Add(this.customerLabel);
@@ -107,6 +138,8 @@
         private System.Windows.Forms.Label customerLabel;
         private System.Windows.Forms.RichTextBox orderRichTextBox;
         private System.Windows.Forms.Button orderButton;
+        private System.Windows.Forms.Button accountButton;
+        private System.Windows.Forms.ComboBox tableComboBox;
     }
 }
 
